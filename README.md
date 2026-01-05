@@ -1,9 +1,9 @@
 ## App Screenshots
 
 ### Main Screen
-![Main Screen](<screenshots/Simulator Screenshot - iPhone 17 Pro - 2026-01-05 at 17.46.20.png>)
-
-
+<p align="center">
+  <img src="screenshots/main-screen.png" width="320" />
+</p>
 FINITE — iOS Habit Tracker (SwiftUI)
 
 FINITE is a minimalist iOS habit-tracking application designed to help users build consistency through a simple, visual dot-based system. The app focuses on clarity, performance, and native iOS best practices without relying on third-party dependencies.

@@ -1,59 +1,71 @@
-## App Screenshots
+# FINITE
 
-### Main Screen
-<p align="center">
-  <img src="screenshots/main-screen.png" width="320" />
-</p>
-FINITE — iOS Habit Tracker (SwiftUI)
+> A quiet, visual reminder to make today count.
 
-FINITE is a minimalist iOS habit-tracking application designed to help users build consistency through a simple, visual dot-based system. The app focuses on clarity, performance, and native iOS best practices without relying on third-party dependencies.
+FINITE is a privacy-first iOS app that turns a year into 365 visible days. Mark one day at a time, see the time ahead of you, and build a deliberate daily practice without accounts, notifications, or distractions.
 
-Overview
+![FINITE main screen](main-screen.png)
 
-FINITE enables users to track daily habits using an intuitive grid interface where each interaction represents progress. The project emphasizes clean architecture, SwiftUI state management, and lightweight local persistence.
+## Highlights
 
-This project was built to demonstrate strong fundamentals in native iOS development, UI composition, and data handling.
+- A tactile 365-day progress grid
+- Clear completed, remaining, and percentage statistics
+- One-tap daily check-in with native haptic feedback
+- Undo and reset controls with confirmation
+- Local persistence using `@AppStorage`
+- VoiceOver labels and Dynamic Type-friendly typography
+- Fully native SwiftUI implementation with no third-party dependencies
 
-Key Features
-	•	SwiftUI-first architecture using modern declarative UI patterns
-	•	Tap-to-complete habit tracking with instant visual feedback
-	•	Persistent local storage using UserDefaults
-	•	Haptic feedback to enhance user interaction
-	•	Minimal, distraction-free UI focused on usability
-	•	Zero third-party libraries (fully native implementation)
+## Product philosophy
 
-Technical Stack
-	•	Language: Swift
-	•	UI Framework: SwiftUI
-	•	State Management: @State
-	•	Layout: LazyVGrid
-	•	Persistence: UserDefaults
-	•	Platform: iOS 16+
-	•	IDE: Xcode
+Most habit trackers add more: streaks, charts, accounts, subscriptions, and reminders. FINITE keeps the interaction intentionally small. Open the app, acknowledge the day, and move on.
 
-Architecture & Implementation Notes
-	•	Uses SwiftUI’s state-driven rendering for predictable UI updates
-	•	Grid-based UI implemented with LazyVGrid for performance efficiency
-	•	Local persistence handled via lightweight key-value storage
-	•	Clean separation between UI logic and state updates
-	•	Designed to scale into more advanced persistence (CoreData / CloudKit)
-  Why This Project
+## Tech stack
 
-This project demonstrates:
-	•	Strong understanding of SwiftUI fundamentals
-	•	Practical use of state management and layout systems
-	•	Ability to build production-style iOS features
-	•	Clean, readable, and maintainable code
-	•	Focus on user experience and performance
+| Area | Implementation |
+| --- | --- |
+| Platform | iOS 17+ |
+| Language | Swift |
+| Interface | SwiftUI |
+| Persistence | `UserDefaults` through `@AppStorage` |
+| Feedback | `UIImpactFeedbackGenerator` |
+| Dependencies | None |
 
-Future Improvements
-	•	Multiple habit support
-	•	Weekly / monthly analytics
-	•	Cloud sync using iCloud
-	•	Custom habit configuration
-	•	Accessibility enhancements
+## Run locally
 
-Author
+1. Clone the repository:
 
-Sunny Nitin
-iOS / Data / Software Engineer
+   ```bash
+   git clone https://github.com/sunnynitin3119/FINITE.git
+   ```
+
+2. Open `FINITE.xcodeproj` in Xcode.
+3. Select an iPhone simulator or connected device.
+4. Build and run with <kbd>⌘R</kbd>.
+
+## Project structure
+
+```text
+FINITE/
+├── FINITE/
+│   ├── ContentView.swift
+│   ├── FINITEApp.swift
+│   └── Assets.xcassets
+└── FINITE.xcodeproj
+```
+
+## Roadmap
+
+- Configurable time horizons
+- Home Screen and Lock Screen widgets
+- Calendar-aware daily check-ins
+- Optional iCloud sync
+- App icon and launch-screen variants
+
+## Author
+
+Created by **Sunny Nitin** — iOS, data, and software engineer.
+
+## Licence
+
+This project currently has no open-source licence. Add a `LICENSE` file before accepting external contributions.

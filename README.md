@@ -2,7 +2,7 @@
 
 ### Main Screen
 <p align="center">
-  <img src="screenshots/main-screen.png" width="320" />
+  <img src="main-screen.png" alt="FINITE app main screen" width="320" />
 </p>
 FINITE — iOS Habit Tracker (SwiftUI)
 
